@@ -1,0 +1,37 @@
+       |module cov;
+       |
+       |void main()
+       |{
+       |    import std.stdio: writeln;
+       |
+      1|    assert( func1() );
+      1|    assert( func2() );
+      1|    writeln( "Tests passed!" );
+       |}
+       |
+       |bool func1()
+       |{
+      1|    int x = 20;
+      1|    int y = 10;
+       |
+      1|    return y * 2 == x;
+       |}
+       |
+       |bool func2()
+       |{
+      1|    uint c = 0;
+     33|    foreach( i; 0..10 )
+       |    {
+     10|        c++;
+       |    }
+       |
+      1|    return c == 10;
+       |}
+       |
+       |bool uncovered()
+       |{
+       |    import std.stdio: writeln;
+0000000|    writeln( "Not covered :(" );
+0000000|    return true;
+       |}
+cov.d is 83% covered
