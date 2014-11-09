@@ -1,0 +1,9 @@
+       |module app;
+       |import cov;
+       |
+       |void main()
+       |{
+      1|    func1();
+      1|    func2();
+       |}
+source/app.d is 100% covered

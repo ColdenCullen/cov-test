@@ -1,14 +1,5 @@
 module cov;
 
-void main()
-{
-    import std.stdio: writeln;
-
-    assert( func1() );
-    assert( func2() );
-    writeln( "Tests passed!" );
-}
-
 bool func1()
 {
     int x = 20;

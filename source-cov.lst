@@ -1,14 +1,5 @@
        |module cov;
        |
-       |void main()
-       |{
-       |    import std.stdio: writeln;
-       |
-      1|    assert( func1() );
-      1|    assert( func2() );
-      1|    writeln( "Tests passed!" );
-       |}
-       |
        |bool func1()
        |{
       1|    int x = 20;
@@ -34,4 +25,4 @@
 0000000|    writeln( "Not covered :(" );
 0000000|    return true;
        |}
-cov.d is 83% covered
+source/cov.d is 77% covered
